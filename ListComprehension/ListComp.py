@@ -5,3 +5,6 @@ print(answer2)
 with_vowels = "This is so much fun"
 without_vowels = "".join(char for char in with_vowels if char not in "aoeiu")
 print(without_vowels)
+# how join itself works
+cooldude = ' '.join(["cool", "dude"])
+print(cooldude)
