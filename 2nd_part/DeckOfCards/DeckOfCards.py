@@ -30,8 +30,9 @@ class Deck:
         actual = min([length, number])
         if length == 0:
             raise ValueError("All cards have been dealt")
+        dealt_cards = self.cards[-actual:]
         self.cards = self.cards[:-actual]
-        return self.cards[-actual:]
+        return dealt_cards
 
     def deal_card(self):
         return self._deal(1)[0]
@@ -43,7 +44,3 @@ class Deck:
         if self.count() < 52:
             raise ValueError("Only full decks can be shuffled")
         return shuffle(self.cards)
-
-
-my_deck = Deck()
-my_deck._deal(20)
