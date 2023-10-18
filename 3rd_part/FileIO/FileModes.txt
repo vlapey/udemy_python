@@ -1,0 +1,5 @@
+r - Read a file (default)
+w - Write to a file (previous content removed)
+a - Append to the end of a file (previous content not removed)
+r+ - Read and write to a file based on cursor and overwrites the content on the cursor
+and it cannot create new file
