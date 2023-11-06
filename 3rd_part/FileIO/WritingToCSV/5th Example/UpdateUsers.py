@@ -18,4 +18,4 @@ def update_users(old_name, old_lastname, name, lastname):
         return f"Users updated: {updated_users}."
 
 
-print(update_users("Colt", "Steele", "Sosi", "Bibu"))
+print(update_users("Colt", "Steele", "Hallberg", "Anderson"))
